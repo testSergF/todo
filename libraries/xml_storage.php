@@ -16,7 +16,8 @@ class xmlStorage
 	 * Path to the xml-files.
 	 * @var string Path
 	 */
-	private $_path = PATH_BASE . '/storage/';	
+	private $_path = PATH_BASE . '/storage/';  // лучше этот путь брать из конфига, 
+						   // а в функции add проверять наличие этого каталога и, если его нет, создавать
 	
 	
 	/*
