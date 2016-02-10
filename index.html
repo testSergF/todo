@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html manifest="manifest.php">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Записная книжка</title>
+		<link rel="stylesheet" href="/css/styles.css" type="text/css" />
+	</head>
+	
+	<body>
+	
+		<div class="body">
+			<h1>Записная книжка</h1>
+			
+			<div id="setting">
+				хранить данные:&nbsp;&nbsp;
+				<input id="server" name="storage" type="radio" value="server">&nbsp;на сервере&nbsp;&nbsp;
+				<input id="browser" name="storage" type="radio" value="browser" checked>&nbsp;в браузере&nbsp;&nbsp;
+			</div>
+			
+			<div class="add_item">
+				<button id="addItem">Добавить запись</button>
+				<button id="saveItem">Сохранить</button>
+				<button id="cancelItem">Отменить</button>
+				<div id="editor_area">
+					<p><input type="text" name="namenote" id="namenote" placeholder="название заметки" autofocus /></p>
+					<p><textarea name="textnote" id="textnote" placeholder="текст заметки"></textarea></p>
+				</div>
+			</div>
+			
+			<ul id="todolist"></ul>
+		</div>
+		
+		<script src="/js/app.js" defer></script>
+  </body>
+</html>
